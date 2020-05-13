@@ -1,0 +1,81 @@
+<html>
+<head><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+   
+<div class="p-3 mb-2 bg-danger text-white">
+   <body>
+ 
+	<center>
+   	<div style="margin-top: 10px;"><h1>ENTER MARKS</h1></div>
+   	<div style="margin-bottom: 20px;"></div>
+   	<form action="http://localhost:5000/afterenter" method="POST">
+	  
+	  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="btn btn-info" id="basic-addon1" style="margin-left: 470px;">Choose a subject</span>
+        </div>
+			  <select name="subject">
+                <option value="Openlab">Openlab</option>
+                <option value="Network">Network</option>
+                <option value="MachineLearning">MachineLearning</option>
+                <option value="Software">Software</option>
+              </select>
+		</div>
+
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="btn btn-warning" id="basic-addon1" style="padding-right: 30px; margin-left: 470px;">Roll Number</span>
+  </div>
+  <input  type="text" class="form-control" placeholder="enter roll no" aria-label="Username" aria-describedby="basic-addon1" style="margin-right: 520px;" name="roll">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="btn btn-dark" id="basic-addon1" style="padding-right: 30px; margin-left: 470px;">Periodical 1</span>
+  </div>
+  <input type="number" class="form-control" placeholder="Enter p1 marks" aria-label="Username" aria-describedby="basic-addon1" style="margin-right: 520px;" name="p1">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="btn btn-dark" id="basic-addon1" style="padding-right: 30px; margin-left: 470px;">Periodical 2</span>
+  </div>
+  <input type="number" class="form-control" placeholder="Enter p2 marks" aria-label="Username" aria-describedby="basic-addon1" style="margin-right: 520px;" name="p2">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="btn btn-dark" id="basic-addon1" style="padding-right: 30px; margin-left: 470px;">Continues Assessment</span>
+  </div>
+  <input type="number" class="form-control" placeholder="Enter Continues Assessment mark" aria-label="Username" aria-describedby="basic-addon1" style="margin-right: 520px;" name="ca">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="btn btn-success" id="basic-addon1" style="padding-right: 30px; margin-left: 470px;">End Semester</span>
+  </div>
+  <input type="number" class="form-control" placeholder="Enter End Semester marks" aria-label="Username" aria-describedby="basic-addon1" style="margin-right: 520px;" name="sem">
+</div>
+
+<div class="input-group mb-3">
+  <div class="btn btn-primary" style="margin-left: 630px;">
+ <p><input class="form-control" type = "submit" value = "submit" />
+ </p>
+</div>
+</div>
+		
+      </form>
+  </center>
+   </body>
+    </div> 
+</html>

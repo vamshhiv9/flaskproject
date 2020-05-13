@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   
+</head>
+<div class="p-3 mb-2 bg-warning text-dark">
+   <body>
+      <div style="padding-top: 10px; padding-bottom: 10px;"><h1><center>YOUR MARKS</center></h1></div>
+      <center>
+      <table class = "table table-dark" border="1" style="width: 400px;">
+		 <thead>
+		 {% for i in range(4) %}
+			<thead>
+			{% for key, value in result[i].items() %}
+				<tr>
+				 <th> {{ key }} </th>
+				 <td> {{ value }} </td>
+				</tr>
+			{% endfor %}
+			</thead>
+		 {% endfor %}
+		 </thead>
+      </table>
+   </center>
+   </body>
+   </div>
+</html>
